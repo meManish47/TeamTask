@@ -20,7 +20,9 @@ export default function Login() {
       await login(form.email, form.password);
       navigate('/dashboard');
     } catch (err) {
-      setError(err.response?.data?.error || 'Login failed');
+      let msg = err.response?.data?.error || 'Login failed';
+      if (typeof msg === 'object') msg = msg.message || JSON.stringify(msg);
+      setError(msg);
     } finally {
       setLoading(false);
     }

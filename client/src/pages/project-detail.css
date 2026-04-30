@@ -1,0 +1,80 @@
+.proj-color-badge { width: 20px; height: 20px; border-radius: 4px; }
+
+.detail-tabs {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.tab-btn.active { font-weight: bold; border-bottom: 2px solid #000; }
+.tab-count { background: #eee; padding: 2px 6px; border-radius: 10px; font-size: 12px; }
+
+.kanban-board {
+  display: flex;
+  gap: 15px;
+}
+
+.kanban-col {
+  background: #f4f4f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+  min-height: 400px;
+}
+.kanban-col.drag-over { background: #e9ecef; border-style: dashed; }
+
+.col-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.col-cards { display: flex; flex-direction: column; gap: 10px; }
+
+.col-empty {
+  border: 1px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+}
+
+.kanban-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: grab;
+  text-decoration: none;
+  color: #333;
+}
+.kanban-card:active { cursor: grabbing; }
+
+.kcard-top { display: flex; justify-content: space-between; margin-bottom: 5px; }
+.kcard-title { font-weight: bold; font-size: 14px; margin-bottom: 5px; }
+.kcard-bottom { display: flex; justify-content: space-between; font-size: 12px; color: #666; }
+
+.members-list { border: 1px solid #ccc; background: #fff; }
+.member-row {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  gap: 10px;
+}
+.member-row:last-child { border-bottom: none; }
+.member-info { flex: 1; }
+.member-name { font-weight: bold; font-size: 14px; }
+.member-email { font-size: 12px; color: #666; }
+.member-role { font-size: 12px; background: #eee; padding: 2px 6px; }

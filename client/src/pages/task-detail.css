@@ -1,0 +1,32 @@
+.td-breadcrumb { font-size: 12px; color: #666; margin-bottom: 15px; }
+.td-breadcrumb a { color: #007bff; text-decoration: none; }
+
+.td-layout { display: flex; gap: 20px; }
+.td-main { flex: 1; }
+
+.td-title-row { display: flex; justify-content: space-between; margin-bottom: 15px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+.td-title { font-size: 24px; margin: 0; }
+.td-description { font-size: 14px; color: #333; margin-bottom: 20px; }
+
+.td-edit-form { border: 1px solid #ccc; padding: 15px; background: #f9f9f9; margin-bottom: 20px; }
+
+.comment-item { display: flex; gap: 10px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.comment-body { flex: 1; }
+.comment-meta { font-size: 12px; color: #666; margin-bottom: 5px; }
+.comment-author { font-weight: bold; color: #333; margin-right: 5px; }
+.comment-content { font-size: 14px; }
+
+.comment-form { display: flex; gap: 10px; margin-top: 20px; }
+
+.td-sidebar {
+  width: 250px;
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.td-meta-section { margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+.td-meta-section:last-child { border-bottom: none; }
+.td-meta-label { font-size: 12px; font-weight: bold; color: #666; margin-bottom: 5px; text-transform: uppercase; }
+.td-meta-value { font-size: 14px; color: #333; }
+.td-meta-select { width: 100%; padding: 5px; }

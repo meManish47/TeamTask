@@ -36,6 +36,11 @@ app.use((err, _req, res, _next) => {
 });
 
 const PORT = process.env.PORT || 3001;
-connectDB().then(() => {
-  app.listen(PORT, () => console.log(`🚀 TeamTask server on port ${PORT}`));
-});
+
+if (process.env.NODE_ENV !== 'production') {
+  connectDB().then(() => {
+    app.listen(PORT, () => console.log(`🚀 TeamTask server on port ${PORT}`));
+  });
+}
+
+module.exports = app;
